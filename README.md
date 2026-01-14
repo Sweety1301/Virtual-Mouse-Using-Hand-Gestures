@@ -19,17 +19,7 @@ Cooldown logic to prevent accidental repeated actions
 
 ## Technologies Used
 
-Python
-
-OpenCV
-
-MediaPipe
-
-NumPy
-
-PyAutoGUI
-
-Pynput
+Python, OpenCV, MediaPipe, NumPy, PyAutoGUI, Pynput
 
 ## How It Works (High Level)
 
