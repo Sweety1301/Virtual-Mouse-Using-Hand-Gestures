@@ -1,12 +1,44 @@
-# Virtual-Mouse-Using-Hand-Gestures
+# AI-Based Virtual Mouse Using Hand Gesture Recognition
 
-The Virtual Mouse Detection project aims to develop a system that allows users to control the mouse pointer through hand gestures using computer vision techniques. This project utilizes a webcam to track hand movements and detect specific gestures to simulate mouse actions such as moving the cursor, left-clicking, right-clicking, double-clicking.
+A real-time virtual mouse system that allows users to control the mouse cursor and perform click actions using hand gestures captured through a webcam.
+The project uses computer vision and geometric analysis of hand landmarks to enable touch-free human–computer interaction.
 
-Objective
+## Key Features
 
-The main objective is to implement a computer vision-based virtual mouse system using Python, OpenCV, Mediapipe, and PyAutoGUI that can:
-●	Track hand gestures.
+Real-time hand tracking using MediaPipe
 
-●	Translate these gestures into mouse actions.
+Cursor movement using index finger position
 
-●	Perform actions like left-click, right-click, double-click.
+Gesture-based left click, right click, and double click
+
+Screenshot capture using a fist gesture
+
+Smooth cursor movement with jitter reduction
+
+Cooldown logic to prevent accidental repeated actions
+
+## Technologies Used
+
+Python
+
+OpenCV
+
+MediaPipe
+
+NumPy
+
+PyAutoGUI
+
+Pynput
+
+## How It Works (High Level)
+
+Webcam captures live video feed
+
+MediaPipe detects 21 hand landmarks per frame
+
+Finger bending is determined using angle calculations
+
+Distance between thumb and index finger is used for gesture separation
+
+Detected gestures are mapped to mouse actions in real time
